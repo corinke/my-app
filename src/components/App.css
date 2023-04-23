@@ -5,12 +5,15 @@
   ul,li,p{
     text-align: left;
     margin-left: 150px;
+    margin-right: 150px;
   }
 
+  p{
+    padding-bottom: 20px;
+  }
 
   .note{
     text-align: center;
-    margin-right: 150px;
   }
 
   input{

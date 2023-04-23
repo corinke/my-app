@@ -1,36 +1,114 @@
+import React from "react";
+import './App.css';
 import cocktails from './data.js';
+import { useState } from "react"
+import RecipeList from "./listRecipe";
 
-import React, {useState} from 'react'; 
 
-function Checkbox(props) { 
+
+function AlcoholSelection() {
+  const [drink, setAlcohol] = useState({
+    alcohol: [],
+  });
   
-  const [checked, setChecked] = useState(false); 
-  const checkedText = props.onText; 
-  const uncheckedText = props.offText; 
-  const togglePreference = props.togglePreference; 
-  const cocktails = props.cocktails; 
+  const handleChange = (e) => {
+    // Destructuring
+    const { value, checked } = e.target;
+    const { alcohol } = drink;
+      
+    console.log(`${value} is ${checked}`);
+     
+    // Case 1 : The user checks the box
+    if (checked) {
+      setAlcohol({
+        drink: [...alcohol, value],
+      });
+    }
   
-  const handleChange = () => { 
+    // Case 2  : The user unchecks the box
+    else {
+      setAlcohol({
+        drink: alcohol.filter((e) => e !== value),
+      });
+    }
+  };
     
-    setChecked(!checked); togglePreference(cocktails); 
-    
-  }; 
+  return (
+    <>
+            <div >
+              <div >
+                <div >
+                  <input
+                   
+                    type="checkbox"
+                    name="alcohol"
+                    value="Rum"
+                    id="flexCheckDefault"
+                    onChange={handleChange}
+                  />
+                  <label
+                    
+                    htmlFor="flexCheckDefault"
+                  >
+                      Rum
+                  </label>
+                </div>
+                <div >
+                  <input
+                   
+                    type="checkbox"
+                    name="alcohol"
+                    value="Vodka"
+                    id="flexCheckDefault"
+                    onChange={handleChange}
+                  />
+                  <label
+                   
+                    htmlFor="flexCheckDefault"
+                  >
+                      Vodka
+                  </label>
+                </div>
+                <div >
+                  <input
+                    
+                    type="checkbox"
+                    name="alcohol"
+                    value="Gin"
+                    id="flexCheckDefault"
+                    onChange={handleChange}
+                  />
+                  <label
+                    htmlFor="flexCheckDefault"
+                  >
+                      Gin
+                  </label>
+                </div>
+                <div >
+                  <input
+                    
+                    type="checkbox"
+                    name="alcohol"
+                    value="Alcohol free"
+                    id="flexCheckDefault"
+                    onChange={handleChange}
+                  />
+                  <label
+                    
+                    htmlFor="flexCheckDefault"
+                  >
+                      Alcohol free
+                  </label>
+                </div>
+              </div>
+              
+              </div>
   
-  return ( 
-    
-    <div>
-    
-      
-      
-      <p>
-        {checked ? checkedText : uncheckedText}
-      </p> 
-      
-    </div>
-      
-  ); 
-
-}; 
-
-
-export {Checkbox};
+            <div >
+              <RecipeList />
+            </div>
+    </>
+  );
+}
+  
+export default AlcoholSelection;

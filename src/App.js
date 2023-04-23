@@ -1,6 +1,9 @@
 
 import './index.css';
 import RecipeList from './components/listRecipe.jsx';
+import Checkbox from './components/conditions.jsx';
+import AlcoholSection from './components/conditions.jsx';
+
 <title>Cocktail maker 3000</title>
 function App() {
   return (
@@ -13,20 +16,12 @@ function App() {
         <h2>Select the ingredients you have to hand:</h2>
         <p class="note">Note: you can make these alcohol-free by omitting the alcohol</p>
         <div>
-          <label>Rum</label>
-          <input type="checkbox" id="rumCheck" value="check" />
-          <label>Gin</label>
-          <input type="checkbox" id="ginCheck" value="check" />
-          <label>Vodka</label>
-          <input type="checkbox" id="vodkaCheck" value="check" />
-          <label>Alcohol free</label>
-          <input type="checkbox" id="AFCheck" value="check" />
-
+          <AlcoholSection />
           
           </div>
       </div>
     <div>
-       <RecipeList className="centre" />  {/*this holds the structure of the recipe cards in listRecipe.jsx */}
+       <RecipeList />  {/*this holds the structure of the recipe cards in listRecipe.jsx */}
     </div>
       
     </div>

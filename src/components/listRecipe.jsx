@@ -1,14 +1,16 @@
 import React from "react";
 import './App.css';
 import cocktails from './data.js';
-// import React, {useState} from 'react';
+import { useState } from "react"
 
 
 
 
 
- function RecipeList() {
+  function RecipeList() {
+    
     return (
+
     <div> {/* arrays to pull in the cocktail details from data.js where the data is stored */}
         <h1>Recipes</h1>
         {cocktails.map(cocktail =>
@@ -30,6 +32,7 @@ import cocktails from './data.js';
         )}
       </div>
     );
-  }
+              }
 
-export default RecipeList
+  export default RecipeList
+
