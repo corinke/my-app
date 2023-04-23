@@ -2,8 +2,30 @@
     text-align: center;
   }
 
-  ul,li{
+  ul,li,p{
     text-align: left;
+    margin-left: 150px;
+  }
+
+
+  .note{
+    text-align: center;
+    margin-right: 150px;
+  }
+
+  input{
+    width: 20px;
+    height: 20px;
+    margin: 10px 20px;
+  }
+
+  input:checked{
+    color: rebeccapurple;
+  }
+
+  label{
+    font-size: 24px;
+
   }
   
   .App-logo {

@@ -3,15 +3,15 @@ id: 0,
 name: 'Mojito',
 image: 'https://www.liquor.com/thmb/MJRVqf-itJGY90nwUOYGXnyG-HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mojito-720x720-primary-6a57f80e200c412e9a77a1687f312ff7.jpg',
 ingredients: ['Mint', 'White Rum', 'Sugar syrup', 'Lime juice', 'Soda water','Make alcohol free by removing the rum!'],
-recipe: 'Crush mint...',
+recipe: 'Crush mint, add lime juice and the sugar syrup to a glass, crushing the mint with the spoon. Add some ice into the glass and pour over a shot of rum. Top with soda water and add more mint or lime juice to taste.',
 
 },
 {
 id: 1,
 name: 'Dark & Stormy',
-image: 'https://www.liquor.com/thmb/MJRVqf-itJGY90nwUOYGXnyG-HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mojito-720x720-primary-6a57f80e200c412e9a77a1687f312ff7.jpg',
+image: 'https://hips.hearstapps.com/hmg-prod/images/lede-1550781637.png',
 ingredients: ['Lime', 'Spiced Rum', 'Ginger beer', 'Bitters','Make alcohol free by removing the rum!'],
-recipe: 'Crush mint and lime',
+recipe: 'Add lime juice, a splash of bitters and ice into a glass then pour over a shot of rum. Top with ginger beer and add more lime juice to taste.',
 
 },
 

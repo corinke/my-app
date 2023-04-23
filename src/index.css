@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F3B06E;
+  
 
 
 }
@@ -14,9 +20,19 @@ code {
     monospace;
 }
 
+.orange{
+  border-radius: 25px;
+  background-color: #f0eeed;
+}
 
 h1{
   font-style: oblique;
+  color: #C14544;
+  padding-top: 40px;
+}
+
+h2{
+  color: #D57A4F;
 }
 
 img{
