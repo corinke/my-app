@@ -1,8 +1,6 @@
-import React from "react";
+
 import './App.css';
 import cocktails from './data.js';
-import { useState } from "react"
-import AlcoholSelection from "./conditions";
 
 
 
